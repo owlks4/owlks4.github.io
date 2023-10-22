@@ -2,7 +2,8 @@ import { Component } from 'react'
 import './App.css'
 import warsOfTheRosesTree from './assets/warsOfTheRosesTree.png';
 import ordoTitleGenerator from './assets/ordoTitleGenerator.png';
- 
+import territoryMapHistory from './assets/territoryMapHistory.png';
+
 class Card extends Component{
   constructor(props){
     super(props);
@@ -37,7 +38,11 @@ class App extends Component {
                <Card cardName="Ordo Title Generator"
                      cardLink="./OrdoTitleGenerator/"
                      imgSrc={ordoTitleGenerator}
-                     description="A title generator for the Ordo Dracul faction from Vampire: The Requiem."/>,]};
+                     description="A title generator for the mysterious Ordo Dracul faction from the very same game. Made with pure Javascript, CSS and HTML."/>,
+               <Card cardName="Interactive Territory Map History"
+                     cardLink="./territory-map-react/"
+                     imgSrc={territoryMapHistory}
+                     description="An interactive version of the paper territory map from a weekly game I played at university. Made with ReactJS and CSS."/>].reverse()};
   }
 
   render(){
