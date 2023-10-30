@@ -4,7 +4,7 @@ import warsOfTheRosesTree from './assets/warsOfTheRosesTree.png';
 import ordoTitleGenerator from './assets/ordoTitleGenerator.png';
 import territoryMapHistory from './assets/territoryMapHistory.png';
 
-class Card extends Component{
+class Card extends Component {
   constructor(props){
     super(props);
     this.state = {};
@@ -32,17 +32,17 @@ class App extends Component {
     super(props);
     this.state = 
     {'cards': [<Card cardName="Interactive Wars of the Roses tree"
-                     cardLink="./WarsOfTheRosesTree/"
+                     cardLink="./wars-of-the-roses-tree-react/"
                      imgSrc={warsOfTheRosesTree}
                      description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."/>,
                <Card cardName="Ordo Title Generator"
                      cardLink="./OrdoTitleGenerator/"
                      imgSrc={ordoTitleGenerator}
-                     description="A title generator for the mysterious Ordo Dracul faction from the very same game. Made with pure Javascript, CSS and HTML."/>,
+                     description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."/>,
                <Card cardName="Interactive Territory Map History"
                      cardLink="./territory-map-react/"
                      imgSrc={territoryMapHistory}
-                     description="An interactive version of the paper territory map from a weekly game I played at university. Made with ReactJS and CSS."/>].reverse()};
+                     description="An interactive version of the paper maps from a weekly game I played at university. Made with React and CSS."/>].reverse()};
   }
 
   render(){
