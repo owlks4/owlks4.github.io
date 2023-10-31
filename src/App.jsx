@@ -31,18 +31,18 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = 
-    {'cards': [<Card cardName="Interactive Wars of the Roses tree"
-                     cardLink="./wars-of-the-roses-tree-react/"
-                     imgSrc={warsOfTheRosesTree}
-                     description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."/>,
-               <Card cardName="Ordo Title Generator"
+    {'cards': [<Card cardName="Ordo Title Generator"
                      cardLink="./OrdoTitleGenerator/"
                      imgSrc={ordoTitleGenerator}
                      description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."/>,
-               <Card cardName="Interactive Territory Map History"
+               <Card cardName="Territory Map History"
                      cardLink="./territory-map-react/"
                      imgSrc={territoryMapHistory}
-                     description="An interactive version of the paper maps from a weekly game I played at university. Made with React and CSS."/>].reverse()};
+                     description="An interactive version of the paper maps from a weekly game I played at university. Made with React and CSS."/>,
+               <Card cardName="Interactive Wars of the Roses tree"
+                     cardLink="./wars-of-the-roses-tree-react/"
+                     imgSrc={warsOfTheRosesTree}
+                     description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."/>].reverse()};
   }
 
   render(){
