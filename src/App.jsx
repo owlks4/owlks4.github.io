@@ -46,7 +46,7 @@ class App extends Component {
                      imgSrc={territoryMapHistory}
                      description="An interactive version of the paper maps from a weekly game I played at university. Made with React and CSS."/>,
                <Card cardName="Degrees of Separation web"
-                     cardLink=".degrees-of-separation-web/"
+                     cardLink="./degrees-of-separation-web/"
                      imgSrc={degreesOfSeparationWeb}
                      description="Visualising networks of people - and using Dijkstra's algorithm to show the shortest paths between any two of them."/>,
                <Card cardName="Titanic Marconi Messages"
