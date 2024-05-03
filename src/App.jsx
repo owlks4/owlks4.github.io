@@ -44,7 +44,7 @@ class App extends Component {
                <Card cardName="Territory Map Viewer"
                      cardLink="./territory-map-react/"
                      imgSrc={territoryMapHistory}
-                     description="An interactive version of the paper maps from a weekly game I played at university. Made with React and CSS."/>,
+                     description="An interactive map showing the changing territory ownership in a roleplaying game. Made with React and CSS."/>,
                <Card cardName="Degrees of Separation web"
                      cardLink="./degrees-of-separation-web/"
                      imgSrc={degreesOfSeparationWeb}
@@ -59,7 +59,7 @@ class App extends Component {
     const cards = this.state.cards.map((card) => <>{card}</>);
     return (
       <div>
-        <h1>Oliver's web projects</h1>
+        <h1>owlks4's web projects</h1>
         <div className = "container">
           {cards}
         </div>
