@@ -14,9 +14,9 @@ class Card extends Component {
 
   render(){
     return (
-      <div className = "card">
+      <div className = "card" style={{width:window.innerWidth < window.innerHeight ? "98%" : "48%" }}>
         <a href={this.props.cardLink} target="_blank" rel="noreferrer">
-          <div className = "flex">
+          <div className = "flex"  style={{flexDirection: window.innerWidth < window.innerHeight ? "column" : "row" }}>
             <img className = "cardImage" src={this.props.imgSrc}/>
             <div>
               <h3>{this.props.cardName}</h3>
@@ -44,7 +44,7 @@ class App extends Component {
                <Card cardName="Territory Map Viewer"
                      cardLink="./territory-map-react/"
                      imgSrc={territoryMapHistory}
-                     description="An interactive map showing the changing territory ownership in a roleplaying game. Made with React and CSS."/>,
+                     description="An interactive map showing changing territory ownership in a roleplaying game. Made with React and CSS."/>,
                <Card cardName="Degrees of Separation web"
                      cardLink="./degrees-of-separation-web/"
                      imgSrc={degreesOfSeparationWeb}
