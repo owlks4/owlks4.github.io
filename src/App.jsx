@@ -35,7 +35,7 @@ class App extends Component {
     super(props);
     this.state = 
     {'cards': [<Card cardName="Ordo Title Generator"
-                     cardLink="./OrdoTitleGenerator/"
+                     cardLink="./ordo-title-generator/"
                      imgSrc={ordoTitleGenerator}
                      description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."
                      />,
