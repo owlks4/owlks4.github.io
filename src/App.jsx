@@ -20,8 +20,12 @@ class Card extends Component {
           <div className = "flex"  style={{flexDirection: window.innerWidth < window.innerHeight ? "column" : "row" }}>
             <img className = "cardImage" src={this.props.imgSrc}/>
             <div>
-              <h3>{this.props.cardName}</h3>
-              <p className = "pCard">{this.props.description}</p> 
+              <h3>
+                {this.props.cardName}
+              </h3>
+              <p className = "pCard">
+                {this.props.description}
+                </p> 
             </div> 
           </div>
         </a>
@@ -57,7 +61,7 @@ class App extends Component {
                <Card cardName="Titanic Marconi Messages"
                      cardLink="./titanic-marconi-messages/"
                      imgSrc={titanicMarconiMap}
-                     description="A 3D map depicting the exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
+                     description="The exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
                     />,
                 <Card cardName="Journey to Mount Doom"
                     cardLink="./journey-to-mount-doom/"
@@ -70,7 +74,7 @@ class App extends Component {
   render(){
     const cards = this.state.cards.map((card) => <>{card}</>);
     return (
-      <div style={{fontSize:window.innerWidth < window.innerHeight ? "0.6em" : "1em"}}>
+      <div style={{fontSize:window.innerWidth < window.innerHeight ? "0.8em" : "1em"}}>
         <h1>owlks4's web projects</h1>
         <div className = "container">
           {cards}
