@@ -44,7 +44,7 @@ class App extends Component {
                      description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."
                      />,
                <Card cardName="Wars of the Roses tree"
-                     cardLink="./wars-of-the-roses-tree-react/"
+                     cardLink="./wars-of-the-roses-tree/"
                      imgSrc={warsOfTheRosesTree}
                      description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."
                      />,
