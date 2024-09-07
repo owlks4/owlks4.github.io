@@ -81,7 +81,7 @@ class App extends Component {
     const cards = this.state.cards.map((card) => <>{card}</>);
     return (
       <div style={{fontSize:window.innerWidth < window.innerHeight ? "0.8em" : "1em"}}>
-        <h1>owlks4's web projects</h1>
+        <h1>owlks4's web projects <span style={{userSelect:"none"}}>🦉</span></h1>
         <div style={{fontSize:"1.25em",fontWeight:"normal",opacity:0.8,lineHeight:1.3}}>
           A collection of web projects put together in my spare time.
           <br/>
