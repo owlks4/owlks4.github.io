@@ -44,15 +44,10 @@ class App extends Component {
                      imgSrc={ordoTitleGenerator}
                      description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."
                      />,
-               <Card cardName="Wars of the Roses tree"
-                     cardLink="./wars-of-the-roses-tree/"
-                     imgSrc={warsOfTheRosesTree}
-                     description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."
-                     />,
                <Card cardName="Degrees of Separation web"
                      cardLink="./degrees-of-separation-web/"
                      imgSrc={degreesOfSeparationWeb}
-                     description="Visualising networks of people - and using Dijkstra's algorithm to show the shortest paths between any two of them."
+                     description="Visualising networks of people - and using Dijkstra to show the shortest path between any two of them."
                     />,
                /*<Card cardName="Titanic Marconi Messages"    //TEMPORARILY REMOVED TO EVEN OUT THE DISPLAY
                      cardLink="./titanic-marconi-messages/"
@@ -64,6 +59,11 @@ class App extends Component {
                     imgSrc={territoryMapHistory}
                     description="An interactive map showing changing territory ownership in a roleplaying game. Made with React and CSS."
                     />,
+                <Card cardName="Wars of the Roses tree"
+                    cardLink="./wars-of-the-roses-tree/"
+                    imgSrc={warsOfTheRosesTree}
+                    description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."
+                />,
                 <Card cardName="Titanic Voyage Replay"
                     cardLink="./tvrpg-replay/"
                     imgSrc={tvrpgReplay}
@@ -82,6 +82,12 @@ class App extends Component {
     return (
       <div style={{fontSize:window.innerWidth < window.innerHeight ? "0.8em" : "1em"}}>
         <h1>owlks4's web projects</h1>
+        <div style={{fontSize:"1.25em",fontWeight:"normal",opacity:0.8,lineHeight:1.3}}>
+          A collection of web projects put together in my spare time.
+          <br/>
+          Many are geographic/diagrammatic in nature.
+          </div>
+        <br/>
         <div className = "container">
           {cards}
         </div>
