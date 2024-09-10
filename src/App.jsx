@@ -49,25 +49,25 @@ class App extends Component {
                      imgSrc={degreesOfSeparationWeb}
                      description="Visualising networks of people - and using Dijkstra to show the shortest path between any two of them."
                     />,
+                <Card cardName="Titanic Voyage Replay"
+                    cardLink="./tvrpg-replay/"
+                    imgSrc={tvrpgReplay}
+                    description="Visualisation of player movements during the Titanic Voyage RPG event. Made with Three.js."
+                   />,
                /*<Card cardName="Titanic Marconi Messages"    //TEMPORARILY REMOVED TO EVEN OUT THE DISPLAY
                      cardLink="./titanic-marconi-messages/"
                      imgSrc={titanicMarconiMap}
                      description="The exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
-                    />,*/               
-               <Card cardName="Territory Map Viewer"
-                    cardLink="./territory-map-react/"
-                    imgSrc={territoryMapHistory}
-                    description="An interactive map showing changing territory ownership in a roleplaying game. Made with React and CSS."
-                    />,
+                    />,*/
                 <Card cardName="Wars of the Roses tree"
                     cardLink="./wars-of-the-roses-tree/"
                     imgSrc={warsOfTheRosesTree}
                     description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."
                 />,
-                <Card cardName="Titanic Voyage Replay"
-                    cardLink="./tvrpg-replay/"
-                    imgSrc={tvrpgReplay}
-                    description="Visualisation of player movements during the Titanic Voyage RPG event. Made with Three.js."
+                <Card cardName="Territory Map Viewer"
+                   cardLink="./territory-map-react/"
+                   imgSrc={territoryMapHistory}
+                   description="An interactive map showing changing territory ownership in a roleplaying game. Made with React and Leaflet."
                    />,
                 <Card cardName="Journey to Mount Doom"
                     cardLink="./journey-to-mount-doom/"
@@ -85,7 +85,7 @@ class App extends Component {
         <div style={{fontSize:"1.25em",fontWeight:"normal",opacity:0.8,lineHeight:1.3}}>
           A collection of web projects put together in my spare time.
           <br/>
-          Many are geographic/diagrammatic in nature.
+          (Most are geographic/diagrammatic in nature)
           </div>
         <br/>
         <div className = "container">
