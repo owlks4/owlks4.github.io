@@ -7,6 +7,7 @@ import titanicMarconiMap from './assets/titanicMarconiMessages.png';
 import degreesOfSeparationWeb from './assets/degreesOfSeparation.png';
 import journeyToMountDoom from './assets/journeyToMountDoom.png';
 import tvrpgReplay from './assets/tvrpgReplay.png';
+import dawnOfTheNthDay from './assets/dawnOfTheNthDay.png';
 
 class Card extends Component {
   constructor(props){
@@ -49,16 +50,21 @@ class App extends Component {
                      imgSrc={degreesOfSeparationWeb}
                      description="Visualising networks of people - and using Dijkstra to show the shortest path between any two of them."
                     />,
+                <Card cardName="Dawn of the Nth Day"
+                    cardLink="./dawn-of-the-nth-day/"
+                    imgSrc={dawnOfTheNthDay}
+                    description="Toy project for generating Majora's Mask title cards using the current date."
+                    />,
+               <Card cardName="Titanic Marconi Messages"
+                     cardLink="./titanic-marconi-messages/"
+                     imgSrc={titanicMarconiMap}
+                     description="The exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
+                    />,
                 <Card cardName="Titanic Voyage Replay"
                     cardLink="./tvrpg-replay/"
                     imgSrc={tvrpgReplay}
                     description="Visualisation of player movements during the Titanic Voyage RPG event. Made with Three.js."
                    />,
-               /*<Card cardName="Titanic Marconi Messages"    //TEMPORARILY REMOVED TO EVEN OUT THE DISPLAY
-                     cardLink="./titanic-marconi-messages/"
-                     imgSrc={titanicMarconiMap}
-                     description="The exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
-                    />,*/
                 <Card cardName="Wars of the Roses tree"
                     cardLink="./wars-of-the-roses-tree/"
                     imgSrc={warsOfTheRosesTree}

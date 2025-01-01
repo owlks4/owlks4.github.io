@@ -54,5 +54,6 @@ p {
 
 .cardImage {
   min-width:287px;
+  max-width:287px;
   width: 100%;
 }
