@@ -4,7 +4,7 @@ import warsOfTheRosesTree from './assets/warsOfTheRosesTree.png';
 import ordoTitleGenerator from './assets/ordoTitleGenerator.png';
 import territoryMapHistory from './assets/territoryMapHistory.png';
 import titanicMarconiMap from './assets/titanicMarconiMessages.png';
-import degreesOfSeparationWeb from './assets/degreesOfSeparation.png';
+import networkOfWho from './assets/networkOfWho.png';
 import journeyToMountDoom from './assets/journeyToMountDoom.png';
 import tvrpgReplay from './assets/tvrpgReplay.png';
 import dawnOfTheNthDay from './assets/dawnOfTheNthDay.png';
@@ -45,41 +45,41 @@ class App extends Component {
                      imgSrc={ordoTitleGenerator}
                      description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."
                      />,
-               <Card cardName="Degrees of Separation web"
-                     cardLink="./degrees-of-separation-web/"
-                     imgSrc={degreesOfSeparationWeb}
-                     description="Visualising networks of people - and using Dijkstra to show the shortest path between any two of them."
-                    />,
                 <Card cardName="Dawn of the Nth Day"
-                    cardLink="./dawn-of-the-nth-day/"
-                    imgSrc={dawnOfTheNthDay}
-                    description="Toy project for generating Majora's Mask title cards using the current date."
-                    />,
+                     cardLink="./dawn-of-the-nth-day/"
+                     imgSrc={dawnOfTheNthDay}
+                     description="Toy project for generating Majora's Mask title cards using the current date."
+                     />,
+                <Card cardName="Wars of the Roses tree"
+                     cardLink="./wars-of-the-roses-tree/"
+                     imgSrc={warsOfTheRosesTree}
+                     description="An interactive family tree depicting the line of succession from 1327 to 1485."
+                 />,
                <Card cardName="Titanic Marconi Messages"
                      cardLink="./titanic-marconi-messages/"
                      imgSrc={titanicMarconiMap}
                      description="The exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
                     />,
-                <Card cardName="Titanic Voyage Replay"
-                    cardLink="./tvrpg-replay/"
-                    imgSrc={tvrpgReplay}
-                    description="Visualisation of player movements during the Titanic Voyage RPG event. Made with Three.js."
-                   />,
-                <Card cardName="Wars of the Roses tree"
-                    cardLink="./wars-of-the-roses-tree/"
-                    imgSrc={warsOfTheRosesTree}
-                    description="An interactive family tree depicting the chaotic line of succession between 1327 and 1485."
-                />,
-                <Card cardName="Territory Map Viewer"
+                  <Card cardName="Territory Map Viewer"
                    cardLink="./territory-map-react/"
                    imgSrc={territoryMapHistory}
                    description="An interactive map showing changing territory ownership in a roleplaying game. Made with React and Leaflet."
                    />,
-                <Card cardName="Journey to Mount Doom"
-                    cardLink="./journey-to-mount-doom/"
-                    imgSrc={journeyToMountDoom}
-                    description="For a given distance, how far would you have travelled along Sam and Frodo's route to Mount Doom?"
-                   />
+                   <Card cardName="Journey to Mount Doom"
+                   cardLink="./journey-to-mount-doom/"
+                   imgSrc={journeyToMountDoom}
+                   description="For a given distance, how far would you have travelled along Sam and Frodo's route to Mount Doom?"
+                  />,
+                   <Card cardName="Titanic Voyage Replay"
+                   cardLink="./tvrpg-replay/"
+                   imgSrc={tvrpgReplay}
+                   description="Visualisation of player movements during the 2024 Titanic Voyage RPG event. Made with Three.js."
+                   />,
+                   <Card cardName="Network of Who"
+                   cardLink="./network-of-who/"
+                   imgSrc={networkOfWho}
+                   description="Breadth-first search for identifying the shortest connection between any two Doctor Who characters, generated from 60+ years of cast list data."
+                 />
                   ].reverse()};
   }
 
