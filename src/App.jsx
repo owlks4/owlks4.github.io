@@ -45,16 +45,11 @@ class App extends Component {
                      imgSrc={ordoTitleGenerator}
                      description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."
                      />,
-                <Card cardName="Dawn of the Nth Day"
-                     cardLink="./dawn-of-the-nth-day/"
-                     imgSrc={dawnOfTheNthDay}
-                     description="Toy project for generating Majora's Mask title cards using the current date."
-                     />,
-                <Card cardName="Wars of the Roses tree"
+             /*   <Card cardName="Wars of the Roses tree"
                      cardLink="./wars-of-the-roses-tree/"
                      imgSrc={warsOfTheRosesTree}
                      description="An interactive family tree depicting the line of succession from 1327 to 1485."
-                 />,
+                 />,  */
                <Card cardName="Titanic Marconi Messages"
                      cardLink="./titanic-marconi-messages/"
                      imgSrc={titanicMarconiMap}
