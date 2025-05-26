@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import './App.css'
+import github from './assets/github.png';
 import warsOfTheRosesTree from './assets/warsOfTheRosesTree.png';
 import ordoTitleGenerator from './assets/ordoTitleGenerator.png';
 import territoryMapHistory from './assets/territoryMapHistory.png';
@@ -82,7 +83,7 @@ class App extends Component {
     const cards = this.state.cards.map((card) => <>{card}</>);
     return (
       <div style={{fontSize:window.innerWidth < window.innerHeight ? "0.8em" : "1em"}}>
-        <h1>owlks4's web projects <span style={{userSelect:"none"}}>🦉</span></h1>
+        <h1 style={{verticalAlign:"middle"}}>owlks4's web projects <a href="https://github.com/owlks4"><img src={github} style={{userSelect:"none",height:"1em"}}/></a></h1>
         <div style={{fontSize:"1.25em",fontWeight:"normal",opacity:0.8,lineHeight:1.3}}>
           A collection of web projects put together in my spare time.
           <br/>
