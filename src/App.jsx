@@ -8,6 +8,7 @@ import titanicMarconiMap from './assets/titanicMarconiMessages.png';
 import networkOfWho from './assets/networkOfWho.png';
 import journeyToMountDoom from './assets/journeyToMountDoom.png';
 import tvrpgReplay from './assets/tvrpgReplay.png';
+import northSouthDivide from './assets/northSouthDivide.png';
 import dawnOfTheNthDay from './assets/dawnOfTheNthDay.png';
 
 class Card extends Component {
@@ -41,26 +42,27 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = 
-    {'cards': [<Card cardName="Ordo Title Generator"
+    {'cards': [
+                <Card cardName="Wars of the Roses tree"
+                     cardLink="./wars-of-the-roses-tree/"
+                     imgSrc={warsOfTheRosesTree}
+                     description="An interactive family tree depicting the line of succession from 1327 to 1485."
+                 />,  
+                <Card cardName="Ordo Title Generator"
                      cardLink="./ordo-title-generator/"
                      imgSrc={ordoTitleGenerator}
                      description="A title generator for the Ordo Dracul faction, from the same game as the territory map. Made with pure Javascript, HTML and CSS."
                      />,
-             /*   <Card cardName="Wars of the Roses tree"
-                     cardLink="./wars-of-the-roses-tree/"
-                     imgSrc={warsOfTheRosesTree}
-                     description="An interactive family tree depicting the line of succession from 1327 to 1485."
-                 />,  */
-               <Card cardName="Titanic Marconi Messages"
-                     cardLink="./titanic-marconi-messages/"
-                     imgSrc={titanicMarconiMap}
-                     description="The exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
-                    />,
                   <Card cardName="Territory Map Viewer"
                    cardLink="./territory-map-react/"
                    imgSrc={territoryMapHistory}
                    description="An interactive map showing changing territory ownership in a roleplaying game. Made with React and Leaflet."
                    />,
+                     <Card cardName="Titanic Marconi Messages"
+                     cardLink="./titanic-marconi-messages/"
+                     imgSrc={titanicMarconiMap}
+                     description="The exchange of wireless messages in the North Atlantic on April 15th, 1912. Made with Three.js."
+                    />,
                    <Card cardName="Journey to Mount Doom"
                    cardLink="./journey-to-mount-doom/"
                    imgSrc={journeyToMountDoom}
@@ -70,6 +72,11 @@ class App extends Component {
                    cardLink="./tvrpg-replay/"
                    imgSrc={tvrpgReplay}
                    description="Visualisation of player movements during the 2024 Titanic Voyage RPG event. Made with Three.js."
+                   />,
+                   <Card cardName="North-South Divide map"
+                   cardLink="./north-south-divide-idw/"
+                   imgSrc={northSouthDivide}
+                   description="Quiz and visualisation of the user's judgement as to where the famous north-south divide is."
                    />,
                    <Card cardName="Network of Who"
                    cardLink="./network-of-who/"
